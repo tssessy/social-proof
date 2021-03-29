@@ -46,8 +46,9 @@ img {
     width: 100vw;
     height: 100vh;
     background-size: auto;
-    
-   
+    background-position-x: left;
+    background-position-y: top;
+    background-repeat: no-repeat;
 }
 .wrapper::after {
     position: absolute;
@@ -197,6 +198,7 @@ img {
 @media only screen and (max-width: 850px) {
     .wrapper {
         padding: 0 3rem;
+        position: relative;
     }
     .wrapper::before {
         position: absolute;
