@@ -136,7 +136,7 @@ img {
 }
 
 .cards {
-    height:min-content;
+    height:max-content;
     min-width: 22rem;
     padding: 3.5rem 3rem;
     background-color: var(--dark-magenta);
