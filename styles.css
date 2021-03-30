@@ -259,8 +259,8 @@ img {
         margin-top: 2rem;
     }
 }
-/* @media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
     .wrapper {
         padding: 0 3rem;
     }
-} */
+}
