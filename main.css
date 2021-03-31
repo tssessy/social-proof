@@ -40,12 +40,12 @@ img {
 }
 .wrapper {
     max-width: 1440px;
-    min-height: calc(100vh -6rem);
+    min-height: 100vh;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.1fr repeat(6, 1fr) 1.1fr;
-    grid-template-rows: 120px 1fr 1fr 120px;
-    gap: 3%;
+    grid-template-rows: 100px 1fr 0.8fr 120px;
+    /* gap: 3%; */
 }
 .top {
     grid-column: 2/8;
