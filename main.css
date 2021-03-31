@@ -31,19 +31,21 @@ body {
     background-repeat: no-repeat, no-repeat;
     /* overflow: hidden; */
 }
-
+.space > * + * {
+    margin-left: var(--space, 2.5rem);
+}
 img {
     max-width: 100%;
     display: block;
 }
 .wrapper {
     max-width: 1440px;
-    min-height: 100vh;
+    min-height: calc(100vh -6rem);
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.1fr repeat(6, 1fr) 1.1fr;
     grid-template-rows: 120px 1fr 1fr 120px;
-    gap: 2rem;
+    gap: 3%;
 }
 .top {
     grid-column: 2/8;
@@ -88,7 +90,7 @@ img {
     background-color: var(--light-gray-magenta);
     border-radius: var(--border-radius);
     padding: 1rem 0 1rem 0;
-    margin: 1.5rem ;
+    margin: 1rem ;
     width: 75%;
 }
 .star {
@@ -122,9 +124,9 @@ img {
     border-radius: var(--border-radius);
     color: var(--light-gray-magenta);
 }
-.cards + .cards {
+/* .cards + .cards {
     margin-left: 2.5rem;
-}
+} */
 .top-card {
     display: flex;
     padding-bottom: 2rem;
@@ -157,6 +159,7 @@ img {
 @media only screen and (max-width: 1024px) {
     .star-card {
         flex-direction: column;
+      
     }
     .cards {
         align-items: center;
@@ -175,6 +178,15 @@ img {
 
 
 @media only screen and (max-width: 850px) {
+    body {
+        
+        background-image: url(./images/bg-pattern-bottom-mobile.svg
+        url(./images/bg-pattern-top-mobile.svg);
+        background-position: bottom right, top left;
+        background-repeat: no-repeat, no-repeat;
+        background-size: max(50%, 400px);
+        /* overflow: hidden; */
+    }
     .wrapper {
         gap: 0;
         grid-template-rows: 50px 1fr 1fr 50px;
